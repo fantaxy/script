@@ -2,7 +2,8 @@
 
 1.将以下文件放到脚本所在目录下：
  a.arm64和armv7两个linkmap文件
- b.QQ for iOS安装包（ipa文件）
+ 
+ b.iOS安装包（ipa文件）
 
 2.运行脚本：
 python unused_selector_otool.py
