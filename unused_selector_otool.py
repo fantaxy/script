@@ -23,17 +23,6 @@ def timestr(time):
 def numstr(num):
     return bcolors.OKGREEN+str(num)+bcolors.ENDC
 
-parser = argparse.ArgumentParser()
-parser.add_argument("srcdir", help="specify the src directory")
-args = parser.parse_args()
-
-srcdir = args.srcdir
-if os.path.exists(srcdir):
-    pass
-else:
-    print bcolors.FAIL+"not exist:%s"+bcolors.ENDC %(srcdir)
-    sys.exit()
-
 print "scanning binary package...."
 start_time = time.time()
 binarypath = ''
